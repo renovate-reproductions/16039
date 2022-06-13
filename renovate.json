@@ -1,0 +1,15 @@
+{
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "\\.txt$"
+      ],
+      "matchStrings": [
+        "(?<depName>[A-Z0-9_]+)_VERSION=(?<currentValue>[a-zA-Z0-9-._]+)"
+      ],
+      "versioningTemplate": "loose",
+      "datasourceTemplate": "repology",
+      "packageNameTemplate": "homebrew/{{{ lowercase depName }}}"
+    }
+  ]
+}
